@@ -1,0 +1,601 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Uchen", serif;
+
+}
+.all-content {
+background: #2e1700;
+
+}
+/* navbar */
+.navbar{
+ background-color: #573818;
+ padding-left: 60px;
+ font-weight: bold;
+}
+#logo{
+  font-size: 23px;
+  color:white;
+}
+#logo img{
+ margin-bottom: 15px;
+
+}
+.navbar-nav{
+  margin-left: 10px;
+
+}
+.nav-link{
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 15px;
+  transition: 0.5s ease;
+
+}
+.nav-link:hover{
+  background-color: rgba(161,109,14,1);
+  color: white;
+  border-radius: 5px;
+
+}
+.icons{
+  margin-left:10px ;
+  transition: 0.5s ease;
+  cursor: pointer;}
+
+.icons img{
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+}
+
+.icons img:hover{
+   transform: translateY(-5px);
+}
+@media screen and (max-widh:330px) {
+#logo {
+font-size: 15px;
+
+}
+}
+
+/* navbar end */
+
+/* home section */
+.home {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     background-image:url(https://images7.alphacoders.com/404/404658.jpg) ;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     align-items: center;
+     justify-content: start;
+     margin:  0;
+}
+
+.home .img  {
+
+flex: 1 1 400px;
+
+}
+.home .img img {
+   width: 130%;
+
+}
+.home .content {
+   flex: 1 1 400px;
+   margin-left: 60px;
+}
+
+.content h3 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+
+
+
+}
+.content h2 {
+     font-size: 60px;
+     color: white;
+     text-shadow: 1px 1px 1px black;
+     font-weight: bold;
+
+}
+.changecontent::after{
+     content: ' ';
+     color: rgb(253, 184, 56);
+     animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext {
+  0%{content: "birthday cake";}
+  20%{content: "chocolate cake";}
+  50%{content: "party cake";}
+  60%{content: "slice cake";}
+  100%{content: "cup cake";}
+
+}
+.content p{
+  color: white;
+  font-weight: bold;
+   text-shadow: 1px 1px 1px black;
+
+}
+.content .btn {
+   width: 110px;
+   height: 38px;
+   background-color: #573818;
+   color: white;
+}
+@media screen and (max-width:800px) {
+   .content h3 {
+font-size: 50px;
+
+   }
+}
+
+@media screen and (max-width:860px) {
+  .home {
+height:120vh ;
+
+  }
+}
+@media screen and (max-width:560px) {
+  .home {
+height: 100vh;
+
+  }
+}
+@media screen and (max-width:330px) {
+  .content h2 {
+      font-size: 30px;
+
+  }
+}
+@media screen and (max-width:560px) {
+  .content h3 {
+      font-size: 30px;
+
+  }
+}
+
+/* home section end*/
+
+/* top cards*/
+#box{
+ margin-top: 50px;
+
+
+}
+ #box .card{
+   box-shadow: 0px 0px 5px black;
+   margin-top: 10px;
+   transition: 0.5s ease;
+   cursor: pointer;
+
+ }
+ #box .card:hover {
+    transform: translateY(-10px);
+
+ }
+
+/* top cards end*/
+
+
+/* banner */
+.banner {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     background-color: rgb(248, 247, 244);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     align-items: center;
+     justify-content: start;
+     margin:  0;
+     background-size: cover;
+    margin-top: 50px;
+
+}
+.banner .img {
+    flex: 1 1 400px;
+
+
+}
+.banner .img img {
+   width: 100%;
+
+}
+.banner .content {
+flex: 1 1 400px;
+margin-left: 60px;
+margin-top: 60px;
+}
+.banner .content h3 {
+  color: rgb(247, 142, 5);
+   font-weight: bold;
+}
+.banner .content h2{
+   font-size: 50px;
+   color: rgb(247, 102, 5);
+   font-weight: bold;
+   text-shadow: 1px 1px 1px black;
+
+}
+.banner .content p{
+
+  color: rgb(247, 142, 5);
+
+}
+#btnorder button{
+   width: 150px;
+   height: 32px;
+   letter-spacing: 5px;
+   background-color: rgb(247, 142, 5) ;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+
+}
+@media screen and (max-width:800px) {
+   .banner .content h3 {
+  font-size: 50px;
+
+   }
+}
+
+@media screen and (max-width:855px) {
+.banner {
+height: 100vh;
+
+}
+}
+/* banner end */
+
+
+/* prodect cards */
+#prodect-cards{
+  background-color: #ffffff;
+  width: 100%;
+  height: 200vh;
+
+}
+#prodect-cards h1{
+
+ text-align: center;
+ font-weight: bold;
+ margin-top: 50px;
+ color: rgb(255, 153, 0);
+ text-shadow: 1px 1px 1px black;
+ border-bottom: 2px solid orangered;
+
+
+}
+#prodect-cards .card {
+background-color:rgb(238, 179, 69) ;
+box-shadow: 0 0 3px black;
+border-radius: 5px;
+cursor: pointer;
+
+}
+.overlay{
+display: block;
+opacity: 0;
+position: absolute;
+top: 10%;
+margin-left: 0;
+width: 70px;
+
+}
+#prodect-cards .card:hover .overlay{
+opacity: 1;
+margin-left: 5%;
+transition: 0.5s ease;
+
+}
+
+.overlay i .img {
+background-color: #2e1700;
+height: 30px;
+width: 30px;
+font-size: 20px;
+padding: 7px;
+margin: -20%;
+margin-bottom: 5%;
+cursor: pointer;
+
+
+}
+
+.overlay.btn-secondary{
+background: transparent !important;
+border: none;
+box-shadow: none;
+
+}
+#prodect-cards h3{
+color: white;
+text-shadow: 1px 1px 1px black;
+
+}
+
+.star .checked{
+    color: yellow;
+
+}
+#prodect-cards p{
+color: #2e1700;
+font-weight: bold;
+
+}
+#prodect-cards h6 {
+font-size: 20px;
+color: #2e1700;
+font-weight: bold;
+
+}
+#prodect-cards h6 span button{
+width: 100%;
+height: 26px;
+font-size: 15px;
+background: transparent;
+letter-spacing: 3px;
+border: 2px solid #573818;
+font-weight: bold;
+transition: 0.5s ease;
+cursor: pointer;
+border-radius: 5px;
+float: right;
+ border-radius: 5px;
+
+}
+#prodect-cards h6 span button:hover {
+background-color: #2e1700;
+color: white;
+
+
+
+}
+/* prodect cards end */
+
+
+/* gallary */
+#gallary{
+  margin-top: 50px;
+
+
+}
+
+#gallary h1{
+  text-align: center;
+  font-weight: bold;
+  margin: 50px;
+  color: rgb(255, 153, 0);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid orangered;
+  
+
+}
+#gallary .card{
+box-shadow: 3px 3px 3px black;
+cursor: pointer;
+
+}
+#gallary .overlay{
+ opacity: 0;
+ width: 100%;
+ color: white;
+ text-shadow: 1px 1px 1px black;
+
+}
+#gallary .card:hover .overlay{
+opacity: 5;
+margin-top: 20px;
+transition: 0.5s ease;
+
+}
+/* gallary end */
+
+/* About */
+#about {
+  margin-top: 50px;
+}
+#about h1{
+  text-align: center;
+  font-weight: bold;
+  margin: 50px;
+  color: rgb(255, 153, 0);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid orangered;
+  
+
+}
+
+#about .card{
+   background-color:rgb(255, 153, 0) ;
+   box-shadow: 0px 0px 5px black;
+
+
+}
+#about p{
+color: rgb(247, 142, 5);
+text-shadow: 1px 1px 1px black;
+font-weight: bold;
+
+}
+#bt button{
+ width:150px ;
+ height: 32px;
+ letter-spacing: 3px;
+ color: white;
+ background-color: rgb(247, 142, 5);
+ border: none;
+cursor: pointer;
+
+}
+@media screen and (max-width:1000px) {
+  #about p{
+     font-size: 10px;
+
+  }
+}
+@media screen and (max-width:760px) {
+  #about p{
+     font-size: 20px;
+
+  }
+}
+
+
+/* About end */
+
+/* contect */
+
+#contect {
+margin-top: 100px;
+
+}
+#contect h1{
+  text-align: center;
+  font-weight: bold;
+  margin: 50px;
+  color: rgb(255, 153, 0);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid orangered;
+
+}
+
+#contect input{
+ background-color: #573818;
+}
+
+#contect input::placeholder{
+ color: white;
+}
+#contect textarea {
+
+background-color: rgb(247, 142, 5);
+
+
+}
+#contect textarea::placeholder{
+color: white;
+
+}
+#messagebtn{
+ text-align: center;
+
+}
+#messagebtn button{
+ width: 200px;
+ height: 30px;
+ letter-spacing:  3px; ;
+ font-weight: bold;
+ background: transparent;
+ border: 2px solidw white;
+ color: white;
+ transition: 0.5s ease;
+ cursor: pointer;
+ 
+}
+#message button :hover{
+ background-color: rgb(247, 142, 5);
+
+}
+
+/* contect end */ 
+/* footer */
+
+#footer {
+ width: 100px;
+ background-color: #573818;
+ box-shadow: 0px 0px 5px blackm;
+ margin-top: 100px;
+
+}
+
+#footer h1 {
+  color: white;
+  padding-top: 30PX;
+}
+#footer p{
+ color: white;
+}
+
+
+.icons i{
+background-color: white;
+color: #573818;
+border-radius: 50px;
+padding: 6px;
+font-size: 30px;
+transition: 0.5s ;
+cursor: pointer;
+
+}
+.icons i :hover{
+     background-color: rgb(247, 142, 5);
+     color: white;
+
+
+}
+.copyright {
+color: white;
+margin-top: 20px;
+}
+.credite{
+color: white;
+}
+/* footer */
+#footer{
+  width: 100%;
+  background-color: #573818;
+  box-shadow: 0px 0px 5px black;
+  margin-top: 50px;
+}
+html{
+ scroll-behavior: smooth;
+}
+.arrow{
+ position: fixed;
+ background-color: rgb(247, 142, 5);
+ border-radius: 50px;
+ height: 50px;
+ bottom: 40px;
+ right: 50px;
+ text-decoration: none;
+ text-align: center;
+line-height: 50px;
+}
+.footer h1{
+ color: white;
+padding-top: 30px;
+}
+.footer p{
+ color: white;
+}
+.icons i{
+  background-color: white;
+   color: #573818;
+   border-radius: 50px;
+  padding: 6px;
+  transition: 0.5s ;
+  cursor: pointer;
+}
+.icons i:hover{
+   background-color: rgb(247, 142, 5);
+  color: white;
+
+
+}
+
+
+
